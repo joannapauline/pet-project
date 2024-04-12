@@ -552,5 +552,15 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
+  <distributionManagement>
+     <repository>
+        <id>maven-releases</id>
+        <url>http://localhost:8081/repository/maven-releases/</url>		<!-- Enter Nexus http://PublicIP:8081/repository/maven-releases/ -->
+     </repository>
+     <snapshotRepository>
+       <id>maven-snapshots</id>
+       <url>http://localhost:8081/repository/maven-snapshots/</url>	        <!-- Enter Nexus http://publicIP:8081/repository/maven-snapshots/ -->
+     </snapshotRepository>
+ </distributionManagement>
 
 </project>
